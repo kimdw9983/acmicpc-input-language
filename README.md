@@ -1,3 +1,4 @@
 # ACMICPC
 
-`;;` to comment. That's it for now.
+- `.acmicpc` file. It's supposed to be a input file.
+- `;;` to comment
