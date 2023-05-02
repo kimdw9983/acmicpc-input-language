@@ -1,0 +1,25 @@
+{
+  "name": "acmicpc",
+  "displayName": "acmicpc",
+  "description": "Format acmicpc's input",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "acmicpc",
+      "aliases": ["acmicpc", "acmicpc"],
+      "extensions": [".acmicpc"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "acmicpc",
+      "scopeName": "input.acmicpc",
+      "path": "./syntaxes/acmicpc.tmLanguage.json"
+    }]
+  }
+}
