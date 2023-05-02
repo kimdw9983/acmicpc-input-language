@@ -1,32 +1,16 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "acmicpc",
+  "scopeName": "source.acmicpc",
 	"patterns": [
 		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
+      "name": "comment.line.acmicpc",
+      "match": "(;;).*",
+      "captures": {
+        "0": { "name": "comment.line.acmicpc" }
+      }
+    }
 	],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.acmicpc",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.acmicpc",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.acmicpc",
-					"match": "\\\\."
-				}
-			]
-		}
-	},
-	"scopeName": "text.acmicpc"
+	"repository": {},
+  "fileTypes": [".acmicpc"]
 }
