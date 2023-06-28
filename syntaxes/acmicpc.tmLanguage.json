@@ -5,10 +5,11 @@
 	"patterns": [
 		{
       "name": "comment.line.acmicpc",
-      "match": "(;;).*",
-      "captures": {
-        "0": { "name": "comment.line.acmicpc" }
-      }
+      "match": "(;;).*"
+    },
+    {
+      "name": "keyword.control.acmicpc",
+      "match": "\\\\next"
     }
 	],
 	"repository": {},
